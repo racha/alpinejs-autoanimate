@@ -1,4 +1,4 @@
-# Alpine JS X-autoanimate
+# Alpine JS `x-autoanimate`
 
 Alpine JS wrapper `x-autoanimate` allows you to use [FormKit AutoAnimate](https://auto-animate.formkit.com/) with [AlpineJS](https://alpinejs.dev/)
 
@@ -21,7 +21,7 @@ You can pass settings object to `x-autoanimate` like this:
 
 ```html
 <div x-data="{items: [1, 2, 3]}">
-  <div x-autoanimate="{duration: 500, ease:'ease-in-out'}">
+  <div x-autoanimate="{duration: 500, easing:'ease-in-out'}">
     <template x-for="(item, index) in items" :key="`${item}`">
       <div x-text="item" @click="items.splice(index, 1)"></div>
     </template>
