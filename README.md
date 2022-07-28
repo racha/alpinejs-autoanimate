@@ -17,6 +17,30 @@ Example how to use `x-autoanimate`. For animations to work correctly you **MUST*
 </div>
 ```
 
+You can pass settings object to `x-autoanimate` like this:
+
+```html
+<div x-data="{items: [1, 2, 3]}">
+  <div x-autoanimate="{duration: 500, ease:'ease-in-out'}">
+    <template x-for="(item, index) in items" :key="`${item}`">
+      <div x-text="item" @click="items.splice(index, 1)"></div>
+    </template>
+  </div>
+  <div @click="items.push(Math.floor((Math.random()*1000 + 1)))">Add Item</div>
+</div>
+```
+
+Default settings are (if not provided):
+
+```js
+{
+    // Animation duration in milliseconds (default: 250)
+  duration: 250,
+  // Easing for motion (default: 'ease-in-out')
+  easing: 'ease-in-out'
+}
+```
+
 ## Install
 
 ### CDN
