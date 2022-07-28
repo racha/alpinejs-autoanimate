@@ -1,0 +1,41 @@
+{
+  "name": "alpinejs-autoanimate",
+  "version": "1.0.7",
+  "description": "AlpineJS autoAnimate",
+  "type": "module",
+  "keywords": [
+    "Alpine",
+    "AlpineJS",
+    "Auto Animate",
+    "auto-animate",
+    "Alpine Animations",
+    "Alpine Auto Animate",
+    "Alpine autoAnimate",
+    "Alpine auto-animate"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/racha/alpinejs-autoanimate.git"
+  },
+  "author": "Stefan Racic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/racha/alpinejs-autoanimate/issues"
+  },
+  "homepage": "https://github.com/racha/alpinejs-autoanimate#readme",
+  "main": "dist/autoanimate.cjs.js",
+  "module": "dist/autoanimate.esm.js",
+  "unpkg": "dist/autoanimate.cdn.js",
+  "jsdelivr": "dist/autoanimate.cdn.js",
+  "browser": "dist/autoanimate.cdn.js",
+  "scripts": {
+    "build": "node scripts/build.js"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.7",
+    "@babel/preset-env": "^7.16.11",
+    "@formkit/auto-animate": "^1.0.0-beta.1",
+    "esbuild": "^0.14.27",
+    "esbuild-plugin-babel": "^0.2.3"
+  }
+}
