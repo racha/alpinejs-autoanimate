@@ -1,6 +1,6 @@
 # Alpine JS `x-autoanimate`
 
-Alpine JS wrapper `x-autoanimate` allows you to use [FormKit AutoAnimate](https://auto-animate.formkit.com/) with [AlpineJS](https://alpinejs.dev/)
+Alpine JS plugin `x-autoanimate` allows you to use [FormKit AutoAnimate](https://auto-animate.formkit.com/) with [AlpineJS](https://alpinejs.dev/)
 
 ## Example
 

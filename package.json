@@ -1,7 +1,7 @@
 {
   "name": "alpinejs-autoanimate",
-  "version": "1.0.7",
-  "description": "AlpineJS autoAnimate",
+  "version": "1.0.10",
+  "description": "AlpineJS AutoAnimate",
   "type": "module",
   "keywords": [
     "Alpine",
