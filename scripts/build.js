@@ -5,9 +5,8 @@ build({
   entryPoints: [`builds/cdn.js`],
   outfile: `dist/autoanimate.cdn.js`,
   plugins: [babel()],
-  //target: ['es5'],
   platform: "browser",
-  define: { CDN: true },
+  define: { CDN: "true" },
 });
 
 build({
