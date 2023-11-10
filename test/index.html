@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Autoanimate Test</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="../dist/autoanimate.cdn.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+  <body>
+    <script>
+      const test = () => {
+        return {
+          items: ["First Item"],
+          init() {
+            // Add new timestamp to items every 500ms max 20 items
+            setInterval(() => {
+              if (this.items.length < 20) {
+                this.items.push(Date.now());
+              }
+            }, 750);
+            // Shuffles items every 2 seconds
+            setTimeout(() => {
+              setInterval(() => {
+                this.items = this.items.sort(() => Math.random() - 0.5);
+              }, 2000);
+            }, 5000);
+          },
+        };
+      };
+    </script>
+    <div>
+      <div x-data="test" class="p-20">
+        <div x-autoanimate class="grid grid-cols-4 gap-4 text-center">
+          <template x-for="item in items" :key="item">
+            <div class="p-4 bg-blue-300" x-text="item"></div>
+          </template>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
